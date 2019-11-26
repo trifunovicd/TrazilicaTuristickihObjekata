@@ -1,0 +1,765 @@
+.navbar  
+{
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #353638;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.navbar ul li a:hover
+{
+  background-color: #7386D5;
+  color: white;
+}
+
+.navbar ul li a[aria-expanded="true"]
+{ 
+  background-color: #5c6fb8 !important;
+  color: white;
+}
+
+body
+{
+	padding-top: 100px;
+}
+
+.active
+{
+  background-color: #5c6fb8;
+  color: white;
+}
+
+.lokacije-container, #kartaPrikaz, .profil-container, #poslanelokacije-container, .korisnici-container
+{
+	width: 90%;
+	margin: auto;
+}
+
+#tip, #lokacija, #radijus, #space
+{
+  margin-right: 20px;
+}
+
+.form-inline button
+{
+  box-shadow: 0px 0px 4px 0px #e5e5e5;
+}
+
+.form-inline button, #closeModal, .kom_button, #preporuci_button, .spremi_preporuku, .spremi_komentar_preporuke, #zatvori_moje_komentare, #ucitaj_vise
+{
+  background-color: #5c6fb8;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.form-inline button:hover, .form-inline button:focus, #pregledButton:hover, #closeModal:hover, .kom_button:hover, .kom_button:focus, #preporuci_button:hover, .spremi_preporuku:hover, .spremi_preporuku:focus, .spremi_komentar_preporuke:hover, .spremi_komentar_preporuke:focus, #zatvori_moje_komentare:hover, #ucitaj_vise:hover
+{
+  background-color: #7386D5;
+  color: white;
+  outline: none;
+}
+
+#myAlert, #myAddAlert, #myDeleteCommentAlert, #myAddCommentAlert, #myEditCommentAlert, #myPreporukaAlert, #myDeletePreporukaAlert, #myUpdatePreporukaAlert, #myVisibilityAlert
+{
+  position: fixed;
+  bottom: 5px;
+  left:40%;
+  right: 40%;
+  z-index: 9999999;
+}
+
+#tablica-lokacije th, #tablica-mojelokacije th, #tablica-poslanelokacije th, #tablica-mojikomentari th, #tablica-korisnikove-lokacije th
+{
+  background-color: #8393bd;  
+  text-align: center;
+}
+
+#tablica-lokacije tr:nth-child(even), #tablica-mojelokacije tr:nth-child(even), #tablica-poslanelokacije tr:nth-child(even), #tablica-mojikomentari tr:nth-child(even), #tablica-korisnikove-lokacije tr:nth-child(even)
+{
+  background-color: #bdc8e4;
+}
+
+#tablica-lokacije tbody tr:hover, #tablica-mojelokacije tbody tr:hover, #tablica-poslanelokacije tbody tr:hover, #tablica-mojikomentari tbody tr:hover, #tablica-korisnikove-lokacije tbody tr:hover
+{
+  background-color: #99aad5;
+  color: white;
+}
+
+#tablica-lokacije, #tablica-mojelokacije, #tablica-poslanelokacije, #tablica-mojikomentari, #tablica-korisnikove-lokacije
+{
+  text-align: center;
+}
+
+.form-container label
+{
+  margin-right: 10px;
+}
+
+.form-container label, .lokacije-container label, h3.page-header, h4.tekst, .korisnici-container label
+{
+  color: white;
+  font-weight: normal;
+}
+
+.align
+{
+  text-align: left !important;
+}
+
+#mapModal 
+{
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+}
+
+#map
+{
+  height:450px;
+  border-radius: 15px;
+}
+
+#myModal div.modal-footer
+{
+  border-top: 0 none;
+}
+
+#closeModal, #pregledButton
+{
+  box-shadow: 0px 0px 4px 0px #e5e5e5;
+}
+
+.naslov
+{
+  font-size: 24px;
+}
+
+#search, #search_komentari
+{
+  border: none;
+  color:white;
+  background-color: transparent;
+  outline: none;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+
+#search_users
+{
+  border: none;
+  color:white;
+  background-color: transparent;
+  outline: none;
+  padding-left: 5px;
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+#search_preporuke
+{
+  border: none;
+  color:white;
+  background-color: transparent;
+  outline: none;
+  padding-left: 5px;
+  margin-top: 3px;
+}
+
+#search::placeholder, #search_preporuke::placeholder, #search_komentari::placeholder
+{
+  color: white;
+  opacity: 1;
+  font-style:italic;
+}
+
+#search_users::placeholder
+{
+  color: darkorange;
+  opacity: 1;
+  font-style:italic;
+}
+
+.header_search
+{
+  float: right;
+}
+
+#pregledButton
+{
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:40px;
+  right:20px;
+  background-color:#5c6fb8;
+  color: white;
+  border-radius:50px;
+  text-align:center;
+  outline: none;
+  border: none;
+}
+
+.profil-container
+{
+  width: 350px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px black;
+  padding-top: 80px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-35%);
+  background-color: rgb(32,32,32,0.8);
+}
+
+#ukloni, #registracija
+{
+  text-align: center;
+  margin-top: 15px;
+}
+
+#ukloni a, #registracija a
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#ukloni a:hover, #registracija a:hover
+{
+  color: white;
+}
+
+#moji_podaci
+{
+  width: 70%;
+  color: white;
+  margin:auto;
+}
+
+#moji_podaci input
+{
+  width: 100%;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+}
+
+#moji_podaci button
+{
+  outline: none;
+  background: #5c6fb8;
+  color: #fff;
+  border-radius: 20px;
+  height: 40px;
+  font-size: 16px;
+}
+
+#moji_podaci button:hover
+{
+  cursor: pointer;
+  color: #7386D5;
+  background: #fff;
+}
+
+#slika
+{
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  left: calc(50% - 105px);
+  z-index: 1;
+  top: -100px;
+}
+
+#profile
+{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#file_input
+{
+  display: none;
+}
+
+.container
+{
+  display: block;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+}
+
+.overlay
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 180px;
+  width: 180px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 75px;
+  color: white;
+}
+
+.container:hover .overlay
+{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.text
+{
+  font-size: 40px;
+}
+
+#uredi_komentar
+{
+  position: absolute;
+  top: 4px;
+  right: 1px;
+}
+
+#azuriraj_komentar
+{
+  color: #019829;
+  position: absolute;
+  top: 4px;
+  right: 51px;
+  display: none;
+}
+
+#obrisi_komentar
+{
+  color: #be253f;
+  position: absolute;
+  top: 4px;
+  right: 26px;
+  display: none;
+}
+
+#komentar_slika
+{
+  border-radius: 50%;
+  position: absolute;
+}
+
+label[for="komentar_tekst"]
+{
+  position: absolute;
+  left: 68px;
+}
+
+.komentar_tekst
+{
+  margin-left: 65px;
+  top: 25px;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px 5px;
+  background-color: rgb(0, 0, 0, 0);
+  border-radius: 0;
+  border: none;
+  resize: none;
+  outline-style: none;
+  color: white;
+}
+
+pre 
+{
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+#nema_komentara, #nema_mojih_komentara, #nema_lokacija
+{
+  text-align: center;
+  color: #c6c6c6;
+}
+
+#osvjezi_komentare
+{
+  position: absolute;
+  top: 22px;
+  left: 110px;
+}
+
+#textarea_komentar, #textarea_preporuke, #textarea_uredi_komentar
+{
+  background-color: rgb(0, 0, 0, 0);
+}
+
+#KomentariModal div.modal-content, #DodajKomentarModal div.modal-content, #PreporukeModal div.modal-content, #KomentarPreporukeModal div.modal-content, #MojiKomentariModal div.modal-content, #PodaciKorisnikaModal div.modal-content
+{
+  background-color: #292A2E;
+  color: white;
+}
+
+#PodaciKorisnikaModal
+{
+  z-index: 9999;
+}
+
+#KomentariModal, #PreporukeModal, #KomentarPreporukeModal, #MojiKomentariModal, #myModal 
+{
+  z-index: 99999;
+}
+
+#DodajKomentarModal
+{
+  z-index: 999999;
+}
+
+#PodaciKorisnikaModal table
+{
+  color: black;
+}
+
+#preporuci_button
+{
+  padding-left: 25px;
+  padding-right: 28px;
+  padding-top: 8px;
+}
+
+#textarea_preporuke
+{
+  margin-bottom: 10px;
+}
+
+#preporuke_slika, #korisnici_slika
+{
+  border-radius: 50%;
+  margin-left: 16.5px;
+  margin-right: 16.5px;
+}
+
+#preporuke_korisnik, #korisnici_podaci
+{
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.search_korisnik
+{
+  margin-bottom: 20px;
+}
+
+#search_korisnik
+{
+  border: none;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  padding-left: 5px;
+}
+
+#search_korisnik::placeholder
+{
+  color: white;
+  opacity: 1;
+  font-style:italic;
+}
+
+#preporucena_lokacija
+{
+  width: 300px;
+  height: 360px;
+  color: #fff;
+  background-color: rgb(32,32,32,0.7);
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.preporucena_lokacija_map
+{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.preporuka_naziv_mjesta
+{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.preporuka_preporucitelj
+{
+  cursor: pointer;
+}
+
+.spremi_preporuku
+{
+  position: absolute;
+  bottom: 15px;
+  right: 116px;
+}
+
+#obrisi_preporuku
+{
+  position: absolute;
+  top: -7px;
+  left: -3px;
+  z-index: 1;
+  outline: none;
+}
+
+#close_background
+{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255,255,255,0.9);
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  box-shadow: 0px 0px 4px 0px #e5e5e5;
+}
+
+.preporuka_komentar
+{
+  position: absolute;
+  top: 193px;
+  left: 1px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 5px 5px 2px 5px;
+  background-color: rgb(0, 0, 0, 0);
+  border:none;
+  resize: none;
+  outline-style: none;
+  color: white;
+}
+
+.zatvori_komentar_preporuke
+{
+  position: absolute;
+  top: 182px;
+  right: 12px;
+  color: white;
+  outline: none;
+}
+
+.zatvori_komentar_preporuke:hover
+{
+  color: white;
+}
+
+#PreporukeModal .modal-body, .kom, #KomentarPreporukeModal .modal-body, #PodaciKorisnikaModal .modal-body
+{
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
+}
+
+#preporuke_header
+{
+  width: 90%;
+  margin: auto;
+}
+
+#preporuke_primljeno
+{
+  font-size: 16px;
+  color: darkorange;
+  cursor: pointer;
+}
+
+#preporuke_poslano
+{
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+#tablica-poslanelokacije
+{
+  margin-top: 40px;
+}
+
+#preporuceno_spremnik
+{
+  text-align: center;
+}
+
+#no_sent_text, #no_text
+{
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+#no_sent_img, #no_img
+{
+  opacity: 0.5;
+  margin: auto;
+  display: block;
+  margin-top: 90px;
+}
+
+#myForm
+{
+  width: 140px;
+  height: 70px;
+  background-color: rgb(32,32,32,0.9);
+  border-radius: 5px;
+  z-index: 9999999;
+}
+
+label[for="privatno"]
+{
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  cursor: pointer;
+}
+
+label[for="javno"]
+{
+  position: absolute;
+  top: 15px;
+  right: 0;
+  cursor: pointer;
+}
+
+input[id="privatno"]
+{
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  cursor: pointer;
+}
+
+input[id="javno"]
+{
+  position: absolute;
+  top: 40px;
+  right: 24px;
+  cursor: pointer;
+}
+
+#outer
+{
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: white;
+  position: fixed;
+  background-color: rgb(32,32,32,1);
+  height: 170px;
+  text-align: center;
+  z-index: 9;
+  top: 52px;
+  width: 90%;
+  margin-left: 4%;
+}
+
+#page_mask 
+{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
+#ucitaj_vise
+{
+  display: block;
+  margin:auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#sortiraj, #sortiraj_preporuke
+{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-left: 40px;
+  float: right;
+  margin-right: 10px;
+  font-size: 13px;
+  outline: none;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+#sortiraj option, #sortiraj_preporuke option
+{
+  background-color: rgb(32,32,32,0.8);
+}
+
+#sortiraj_preporuke
+{
+  margin-top: 2px;
+}
+
+#search_activate
+{
+  color: darkorange;
+  font-size: 15px;
+  margin-top: 16px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none; 
+}
+
+#outer label
+{
+  text-align:center;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#outer button
+{
+  color: white;
+  position:absolute;
+  left: 15px;
+  top: 10px;
+}

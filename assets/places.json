@@ -1,0 +1,362 @@
+[
+	{
+		"id": "accounting",
+		"name": "računovodstvo" 
+	},
+	{
+		"id": "airport",
+		"name": "zračna luka" 
+	},
+	{
+		"id": "amusement_park",
+		"name": "zabavni park" 
+	},
+	{
+		"id": "aquarium",
+		"name": "akvarij" 
+	},
+	{
+		"id": "art_gallery",
+		"name": "umjetnička galerija" 
+	},
+	{
+		"id": "atm",
+		"name": "bankomat" 
+	},
+	{
+		"id": "bakery",
+		"name": "pekara" 
+	},
+	{
+		"id": "bank",
+		"name": "banka" 
+	},
+	{
+		"id": "bar",
+		"name": "bar" 
+	},
+	{
+		"id": "beauty_salon",
+		"name": "kozmetički salon" 
+	},
+	{
+		"id": "bicycle_store",
+		"name": "trgovina bicikala" 
+	},
+	{
+		"id": "book_store",
+		"name": "knjižara" 
+	},
+	{
+		"id": "bowling_alley",
+		"name": "kuglana" 
+	},
+	{
+		"id": "bus_station",
+		"name": "autobusna stanica" 
+	},
+	{
+		"id": "cafe",
+		"name": "kafić" 
+	},
+	{
+		"id": "campground",
+		"name": "mjesto za kampiranje" 
+	},
+	{
+		"id": "car_dealer",
+		"name": "auto salon" 
+	},
+	{
+		"id": "car_rental",
+		"name": "najam automobila" 
+	},
+	{
+		"id": "car_repair",
+		"name": "popravak automobila" 
+	},
+	{
+		"id": "car_wash",
+		"name": "autopraonica" 
+	},
+	{
+		"id": "casino",
+		"name": "kasino" 
+	},
+	{
+		"id": "cemetery",
+		"name": "groblje" 
+	},
+	{
+		"id": "church",
+		"name": "crkva" 
+	},
+	{
+		"id": "city_hall",
+		"name": "gradska vijećnica" 
+	},
+	{
+		"id": "clothing_store",
+		"name": "trgovina s odjećom" 
+	},
+	{
+		"id": "convenience_store",
+		"name": "mini market" 
+	},
+	{
+		"id": "courthouse",
+		"name": "sud" 
+	},
+	{
+		"id": "dentist",
+		"name": "stomatolog" 
+	},
+	{
+		"id": "department_store",
+		"name": "robna kuća" 
+	},
+	{
+		"id": "doctor",
+		"name": "liječnik" 
+	},
+	{
+		"id": "electrician",
+		"name": "električar" 
+	},
+	{
+		"id": "electronics_store",
+		"name": "trgovina elektronike" 
+	},
+	{
+		"id": "embassy",
+		"name": "ambasada" 
+	},
+	{
+		"id": "fire_station",
+		"name": "vatrogasna postaja" 
+	},
+	{
+		"id": "florist",
+		"name": "cvjećar" 
+	},
+	{
+		"id": "funeral_home",
+		"name": "pogrebno poduzeće" 
+	},
+	{
+		"id": "furniture_store",
+		"name": "trgovina namještajem" 
+	},
+	{
+		"id": "gas_station",
+		"name": "benzinska postaja" 
+	},
+	{
+		"id": "gym",
+		"name": "teretana" 
+	},
+	{
+		"id": "hair_care",
+		"name": "frizerski salon" 
+	},
+	{
+		"id": "hardware_store",
+		"name": "trgovina s alatima" 
+	},
+	{
+		"id": "hindu_temple",
+		"name": "hinduistički hram" 
+	},
+	{
+		"id": "home_goods_store",
+		"name": "prodavaonica kućanskih potrepština" 
+	},
+	{
+		"id": "hospital",
+		"name": "bolnica" 
+	},
+	{
+		"id": "insurance_agency",
+		"name": "osiguravajuće društvo" 
+	},
+	{
+		"id": "jewelry_store",
+		"name": "zlatarnica" 
+	},
+	{
+		"id": "laundry",
+		"name": "praonica" 
+	},
+	{
+		"id": "lawyer",
+		"name": "odvjetnik" 
+	},
+	{
+		"id": "library",
+		"name": "knjižnica" 
+	},
+	{
+		"id": "liquor_store",
+		"name": "trgovina s alkoholom" 
+	},
+	{
+		"id": "local_government_office",
+		"name": "ured lokalne samouprave"
+	},
+	{
+		"id": "locksmith",
+		"name": "bravar" 
+	},
+	{
+		"id": "lodging",
+		"name": "smještaj" 
+	},
+	{
+		"id": "meal_delivery",
+		"name": "dostava hrane" 
+	},
+	{
+		"id": "meal_takeaway",
+		"name": "hrana za ponijeti" 
+	},
+	{
+		"id": "mosque",
+		"name": "džamija" 
+	},
+	{
+		"id": "movie_rental",
+		"name": "najam filma" 
+	},
+	{
+		"id": "movie_theater",
+		"name": "kino" 
+	},
+	{
+		"id": "moving_company",
+		"name": "poduzeće za selidbu" 
+	},
+	{
+		"id": "museum",
+		"name": "muzej" 
+	},
+	{
+		"id": "night_club",
+		"name": "noćni klub" 
+	},
+	{
+		"id": "painter",
+		"name": "slikar" 
+	},
+	{
+		"id": "park",
+		"name": "park" 
+	},
+	{
+		"id": "parking",
+		"name": "parkiralište" 
+	},
+	{
+		"id": "pet_store",
+		"name": "trgovina za kućne ljubimce" 
+	},
+	{
+		"id": "pharmacy",
+		"name": "ljekarna" 
+	},
+	{
+		"id": "physiotherapist",
+		"name": "fizioterapeut" 
+	},
+	{
+		"id": "plumber",
+		"name": "vodoinstalater" 
+	},
+	{
+		"id": "police",
+		"name": "policija" 
+	},
+	{
+		"id": "post_office",
+		"name": "poštanski ured" 
+	},
+	{
+		"id": "real_estate_agency",
+		"name": "agencija za nekretnine" 
+	},
+	{
+		"id": "restaurant",
+		"name": "restoran" 
+	},
+	{
+		"id": "roofing_contractor",
+		"name": "krovopokrivač" 
+	},
+	{
+		"id": "rv_park",
+		"name": "parkiralište kampera" 
+	},
+	{
+		"id": "school",
+		"name": "škola" 
+	},
+	{
+		"id": "shoe_store",
+		"name": "trgovina obuće"
+	},
+	{
+		"id": "shopping_mall",
+		"name": "trgovački centar" 
+	},
+	{
+		"id": "spa",
+		"name": "lječilište" 
+	},
+	{
+		"id": "stadium",
+		"name": "stadion" 
+	},
+	{
+		"id": "storage",
+		"name": "skladište" 
+	},
+	{
+		"id": "store",
+		"name": "trgovina" 
+	},
+	{
+		"id": "subway_station",
+		"name": "podzemna željeznica" 
+	},
+	{
+		"id": "supermarket",
+		"name": "supermarket" 
+	},
+	{
+		"id": "synagogue",
+		"name": "sinagoga" 
+	},
+	{
+		"id": "taxi_stand",
+		"name": "taksi stajalište" 
+	},
+	{
+		"id": "train_station",
+		"name": "željeznička stanica" 
+	},
+	{
+		"id": "transit_station",
+		"name": "tranzitna stanica" 
+	},
+	{
+		"id": "travel_agency",
+		"name": "turistička agencija" 
+	},
+	{
+		"id": "veterinary_care",
+		"name": "veterinarska stanica" 
+	},
+	{
+		"id": "zoo",
+		"name": "zoološki vrt" 
+	}
+]

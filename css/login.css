@@ -1,0 +1,110 @@
+body
+{
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loginbox
+{
+    width: 320px;
+    height: 360px;
+    background: rgb(32,32,32,0.8);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 70px 30px;
+    border-radius: 15px;
+}
+
+.avatar
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.loginbox h1
+{
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#login
+{
+    outline: none;
+    height: 40px;
+    background: #3b70a5;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#login:hover
+{
+    cursor: pointer;
+    color: #7386D5;
+    background: #fff;
+}
+
+#RegModal div.modal-content, #RegModal div.modal-content input
+{
+    background-color: rgb(32,32,32,0.8);
+    color: white;
+}
+
+#RegModal div.modal-content
+{
+    width: 450px;
+    margin: auto;
+}
+
+#registracija a
+{
+    color: #e5e5e5;
+}
+
+button.reg
+{
+    background-color: #3b70a5;
+    color: white;
+    outline: none;
+    border:none;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+button.reg:hover, button.reg:focus
+{
+    background-color: #3b70a5;
+    color: white;
+    outline: none;
+}

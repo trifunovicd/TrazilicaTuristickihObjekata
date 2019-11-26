@@ -1,0 +1,99 @@
+<div ng-controller="mojeLokacijeController">
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div id="main-navbar">
+                    <ul class="nav navbar-nav navbar-left">
+    	                <li><a href="#!/pretraga">Pretraga</a></li>
+    				    <li><a href="#!/moje_lokacije" class="active">Moje lokacije</a></li>
+                        <li><a href="#!/preporuke">Preporuke</a></li>
+                        <li><a href="#!/komentari">Komentari</a></li>
+                        <li><a href="#!/moj_profil">Moj profil</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+          				<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href=""><span class="glyphicon glyphicon-user"></span> {{korisnik}}
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a ng-click="Odjava()" href="">Odjava <span class="glyphicon glyphicon-log-out"></span></a></li>
+                            </ul>
+                        </li>
+          			</ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div ng-controller="preporukeController">
+
+        <div ng-controller="komentariController">
+
+            <div class="lokacije-container">
+                <div class="page-header">
+                    <label class="naslov">Spremljene lokacije</label>
+                    <select class="btn" id="sortiraj" ng-model="selected">
+                        <option value="">Sortiraj &#8693;</option>
+                        <option value="naziv">Naziv &#8615;</option>
+                        <option value="-naziv">Naziv &#8613;</option>
+                        <option value="mjesto">Lokacija &#8615;</option>
+                        <option value="-mjesto">Lokacija &#8613;</option>
+                        <option value="ocjena">Ocjena &#8615;</option>
+                        <option value="-ocjena">Ocjena &#8613;</option>
+                        <option value="vrijeme">Vrijeme &#8615;</option>
+                        <option value="-vrijeme">Vrijeme &#8613;</option>
+                    </select>
+                    <div class="header_search">
+                        <span class="glyphicon glyphicon-search" style="color: white;"></span>
+                        <input id="search" placeholder="Pretraži lokacije" ng-model="lokacija">
+                    </div>
+                </div>
+                
+                <div id="mojelokacije-container">
+                    <table id="tablica-mojelokacije" class="table table-striped" style="display: none">
+                        <thead>
+                            <tr>
+                                <th class="align">Naziv</th>
+                                <th class="align">Lokacija</th>
+                                <th>Ocjena</th>
+                                <th>Karta</th>
+                                <th>Preporuči</th>
+                                <th>Vidljivost</th>
+                                <th>Obriši</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="objekt in msg | filter : lokacija | orderBy : selected">
+                                <td data-toggle="tooltip" title="Pogledaj komentare" class="align" ng-click="KomentariModal(objekt.id,objekt.lat,objekt.lng,objekt.naziv,objekt.mjesto,objekt.ocjena)" style="cursor: pointer;">{{objekt.naziv}}</td>
+                                <td data-toggle="tooltip" title="Pogledaj komentare" class="align" ng-click="KomentariModal(objekt.id,objekt.lat,objekt.lng,objekt.naziv,objekt.mjesto,objekt.ocjena)" style="cursor: pointer;">{{objekt.mjesto}}</td>
+                                <td data-toggle="tooltip" title="Pogledaj komentare" ng-click="KomentariModal(objekt.id,objekt.lat,objekt.lng,objekt.naziv,objekt.mjesto,objekt.ocjena)" style="cursor: pointer;">{{objekt.ocjena}}</td>
+                                <td data-toggle="tooltip" title="Prikaži na karti"><a style="cursor: pointer; color: #05A334;" ng-click="KartaModal(objekt.lat,objekt.lng,objekt.naziv,objekt.mjesto,objekt.ocjena)"><span class="glyphicon glyphicon-map-marker"></span></a></td>
+                                <td data-toggle="tooltip" title="Preporuči lokaciju"><a style="cursor: pointer;" ng-click="PreporukeModal(objekt.id,objekt.naziv,objekt.mjesto,objekt.ocjena,objekt.lat,objekt.lng)"><span class="glyphicon glyphicon-share-alt"></span></a></td>
+
+                                <td data-toggle="tooltip" title="Uredi vidljivost"><a style="cursor: pointer; color: inherit;" ng-click="OpenForm($event,objekt.id,objekt.vidljivost)"><span class="glyphicon glyphicon-eye-{{objekt.vidljivost}}"></span></a></td>
+
+                                <td data-toggle="tooltip" title="Ukloni lokaciju iz favorita"><a style="cursor: pointer; color: #be253f;" ng-click="DeleteLocation(objekt.id,objekt.id_korisnika)"><span class="glyphicon glyphicon-trash"></span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="myAlert" class="alert alert-danger collapse text-center">Lokacija uklonjena!</div>
+
+            <moje-lokacije-form-popup></moje-lokacije-form-popup>
+            <edit-visibility-alert></edit-visibility-alert>
+            <delete-comment-alert></delete-comment-alert>
+            <add-comment-alert></add-comment-alert>
+            <edit-comment-alert></edit-comment-alert>
+            <preporuka-alert></preporuka-alert>
+
+            <karta-modal></karta-modal>
+
+            <komentari-modal></komentari-modal>
+
+            <dodaj-komentar-modal></dodaj-komentar-modal>
+
+            <preporuke-modal></preporuke-modal>
+        </div>
+    </div>
+</div>

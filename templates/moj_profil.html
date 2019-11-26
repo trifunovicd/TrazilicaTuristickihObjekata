@@ -1,0 +1,54 @@
+<div ng-controller="profilController">
+	<header>
+	    <nav class="navbar navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div id="main-navbar">
+	                <ul class="nav navbar-nav navbar-left">
+		                <li><a href="#!/pretraga">Pretraga</a></li>
+					    <li><a href="#!/moje_lokacije">Moje lokacije</a></li>
+					    <li><a href="#!/preporuke">Preporuke</a></li>
+					    <li><a href="#!/komentari">Komentari</a></li>
+					    <li><a href="#!/moj_profil" class="active">Moj profil</a></li>
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                	<li class="dropdown">
+					        <a class="dropdown-toggle" data-toggle="dropdown" href=""><span class="glyphicon glyphicon-user"></span> {{korisnik}}
+					        <span class="caret"></span></a>
+					        <ul class="dropdown-menu">
+					         	<li><a ng-click="Odjava()" href="">Odjava <span class="glyphicon glyphicon-log-out"></span></a></li>
+					        </ul>
+					    </li>
+	      			</ul>
+	            </div>
+	        </div>
+	    </nav>
+	</header>
+
+	<div class="profil-container">
+		<form id="moji_podaci">
+			<label for="file_input" id="slika">
+				<span class="container">
+				    <img id="profile" ng-src="{{slika}}" width="180px" height="180px">
+					<span class="overlay">
+				    	<span class="text glyphicon glyphicon-camera"></span>
+				  	</span>
+				</span>
+			</label>
+			<input id="file_input" type="file" accept="image/png, image/jpeg"/>
+		
+		    <label>Ime:</label>
+		    <input type="text"  id="ime" ng-model="ime">
+		    <label>Prezime:</label>
+		    <input type="text" id="prezime" ng-model="prezime">
+		    <label>Korisničko ime:</label>
+		    <input type="text" id="korisnicko_ime" ng-model="korisnicko_ime">
+		    <label>Lozinka:</label>
+		    <input type="text" id="lozinka" ng-model="lozinka">
+			<button type="button" class="btn btn-block" ng-click="UrediProfil()">Ažuriraj</button>
+		</form>
+		<div id="ukloni">
+			<a ng-click="ProfilPrompt()">Ukloni profil</a>
+		</div>
+	</div>
+</div>
+
